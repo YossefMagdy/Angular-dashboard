@@ -1,0 +1,21 @@
+.menu{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--color-9);
+    }
+}
+
+.menu-view{
+    width: 400px;
+    position: absolute;
+    right:30px;
+    top: 10px;
+    z-index: 9999;
+}

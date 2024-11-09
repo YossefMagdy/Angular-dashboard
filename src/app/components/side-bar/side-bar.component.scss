@@ -1,0 +1,13 @@
+:host{
+    width: 4em;
+    height: 100vh;
+}
+nav{
+    position: fixed;
+    height: 100%;
+    left: 0;
+    background-color: var(--color-10);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+

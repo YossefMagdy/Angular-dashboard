@@ -1,0 +1,55 @@
+<mat-card appearance="outlined" class="my-2 px-3">
+    <mat-card-content>
+     <div class="d-flex align-items-center justify-content-between position-relative">
+        <div class="d-flex align-items-center">
+          <img src="assets/images/gas-station-svgrepo-com.svg"  width="30px " height="30px   "  alt="gas">
+        <h6 class="m-0 ms-1">station name DUMMY</h6>
+        <div class="dot"></div>
+
+        </div>
+        <div class="menu">
+          <i class="fa-solid fa-ellipsis" (click)="handleMenu()"></i>
+          @if (isMenuOpen()) {
+            <mat-card appearance="outlined" class="my-2 menu-view">
+              <mat-card-content>
+                <h6>View Properties</h6>
+                <div class="dividerHr"></div>
+                <div class="d-flex justify-content-between">
+                  <section class="example-section">
+                    <mat-checkbox class="example-margin">Total sales</mat-checkbox>
+                    <mat-checkbox class="example-margin">Total transaction</mat-checkbox>
+                    <mat-checkbox class="example-margin">Total value</mat-checkbox>
+                  </section>
+                  <section class="example-section">
+                    <mat-checkbox class="example-margin">Max transaction count </mat-checkbox>
+                    <mat-checkbox class="example-margin">Max transaction count </mat-checkbox>
+                    <mat-checkbox class="example-margin">compressor status</mat-checkbox>
+                  </section>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          }
+         
+         
+        </div>
+    </div>
+    <div class="dividerHr"></div>
+
+    <section class="d-flex justify-content-between flex-wrap gap-2">
+      <div>
+        <p>Total Sales <span class="ms-5">62,721 m <sup>3</sup></span></p>
+        <p>Total Value <span class="ms-5">550 EGP</span></p>
+      </div>
+      <div>
+        <p>Compression State <span class="ms-5">62,721 m <sup>3</sup></span></p>
+        <p>Total Transaction Count <span class="ms-5">20</span></p>
+      </div>
+      <div>
+        <p>Max Transaction / hour <span class="ms-5">20</span></p>
+        <p>Max Transaction Date-Time <span class="ms-5">8-1-2021 | 10:16 PM</span></p>
+      </div>
+    </section>
+    </mat-card-content>
+  </mat-card>
+
+

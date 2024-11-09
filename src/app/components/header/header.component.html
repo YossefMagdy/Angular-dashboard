@@ -1,0 +1,41 @@
+<header class="d-flex align-items-center justify-content-center justify-content-sm-between px-2 py-4 flex-wrap">
+        <div class="d-flex align-items-center position-relative">
+            <img src="assets/images/gas-station-svgrepo-com-1.svg"  width="30px " height="30px   "  alt="gas">
+           <div class="d-flex mt-2">
+            <h5 class="m-0 mx-2">2/3</h5>
+                <div style="font-size: 14px;;line-height: 17px;">
+                    <p class="m-0">Monitored</p>
+                    <p class="m-0">Stations</p>
+                </div>
+                <div class="dot"></div>
+           </div>
+        </div>
+        <div class="d-flex align-items-center position-relative">
+            <img src="assets/images/refresh.png" width="30px    " height="30px  " alt="refresh">
+            <div class="d-flex mt-2">
+             <h5 class="m-0 mx-2">20s</h5>
+                 <div style="font-size: 14px;line-height: 17px;">
+                     <p class="m-0">Last</p>
+                     <p class="m-0">Update</p>
+                 </div>
+            </div>
+            <div class="dot"></div>
+
+        </div>
+       <app-tabs [tabs]="[
+       'TODAY',
+       'YESTERDAY',
+       'LAST WEEK'
+     ]" activeTab="TODAY"></app-tabs>
+
+       <div class="position-relative">
+        <app-date-input placeHolder="Start date-time"></app-date-input>
+        <div class="tringleDot"></div>
+       </div>
+
+       <div class="position-relative">
+        <app-date-input placeHolder="End date-time"></app-date-input>
+       <div class="squareDot"></div>
+       </div>
+
+</header>

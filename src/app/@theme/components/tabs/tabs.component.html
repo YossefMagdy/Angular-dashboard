@@ -1,0 +1,8 @@
+
+    <ul class="list-unstyled d-flex justify-content-between  align-items-center     my-3">
+        @for (item of tabs(); track $index) {
+        <li class="d-flex justify-content-center align-items-center px-sm-4 px-1 " [class]="{'active':activeTab()===item}" (click)="activeTabChange(item)">
+            {{item}}
+        </li>
+    }
+    </ul>

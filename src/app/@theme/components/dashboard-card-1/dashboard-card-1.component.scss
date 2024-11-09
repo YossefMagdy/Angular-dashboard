@@ -1,0 +1,16 @@
+.card-1{
+    width: 16em;
+    height: 10em;
+    background-color: var(--color-12);
+    &:hover{
+        background-color: var(--color-9);
+    }
+}
+
+.inc{
+    color: var(--color-5);
+}
+
+.dec{
+    color: var(--color-10);
+}

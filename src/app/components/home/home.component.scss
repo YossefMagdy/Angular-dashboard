@@ -1,0 +1,19 @@
+.data-view{
+    height: 350px ;
+    overflow-y: scroll;
+}
+
+.data-view::-webkit-scrollbar {
+    display: block;
+    width: 3px;
+  }
+  
+  .data-view::-webkit-scrollbar-track {
+    background-color: var(--color-9);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .data-view::-webkit-scrollbar-thumb {
+    background: var(--color-10);
+    border-radius: 10px;
+  }

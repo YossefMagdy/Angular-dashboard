@@ -1,0 +1,18 @@
+ul{
+    width: fit-content;
+    height: 2em;
+    background-color: var(--color-1);
+    border-radius: 1em;
+    li{
+        cursor: pointer;
+        height: 100%;
+        border-radius: 1em;
+        align-content: center;
+        color: var(--color-8);
+        white-space: nowrap;
+    }
+}
+.active{
+    background-color: var(--color-10);
+    color: var(--color-12) !important;
+}

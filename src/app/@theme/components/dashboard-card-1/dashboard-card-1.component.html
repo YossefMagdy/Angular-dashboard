@@ -1,0 +1,13 @@
+<mat-card appearance="outlined" class="card-1 d-flex justify-content-center align-items-center ">
+    <mat-card-content>
+      <div>
+        <h4 class="mb-0">{{value()}} <span><ng-content select="[valueType]" /></span></h4>
+        <span>{{text()}}</span>
+        @if(status()==='inc'){
+          <p  [class]="{'inc':status()==='inc'}"><i class="fa-solid fa-sort-up me-2"></i> <ng-content select="[incStatusType]" /></p>
+        }@else {
+          <p [class]="{'dec':status()==='dec'}"><i class="fa-solid fa-sort-down me-2"></i><ng-content select="[decStatusType]" /></p>
+        }
+      </div>
+    </mat-card-content>
+  </mat-card>

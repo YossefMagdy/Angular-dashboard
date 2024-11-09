@@ -1,0 +1,46 @@
+<main>
+  
+    <div class="row">
+        <div class="col-xl-9">
+            <section class="card-section d-flex justify-content-center justify-content-sm-between  flex-wrap gap-3 " >
+                <app-dashboard-card-1 status='dec' text="Total Value" value="71,000">
+                    <span valueType>EGP</span>
+                    <span decStatusType>2%</span>
+                </app-dashboard-card-1>
+                <app-dashboard-card-1 status='inc' text="Total Value" value="71,000">
+                    <span valueType>m <sup>3</sup></span>
+                    <span incStatusType>50 m <sup>3</sup></span>
+                </app-dashboard-card-1>
+                <app-dashboard-card-1 status='dec' text="Total Value" value="72,000">
+                    <span valueType>m <sup>3</sup></span>
+                    <span decStatusType>50 m <sup>3</sup></span>
+                </app-dashboard-card-1>
+                <app-dashboard-card-1 status='inc' text="Total Value" value="71,000">
+                    <span valueType>m <sup>3</sup></span>
+                    <span incStatusType>20 </span>
+                </app-dashboard-card-1>
+            </section>
+            
+            <section class="my-3 ms-auto" style="width: fit-content;">
+                <app-tabs [tabs]="['Graph','List']" [activeTab]="activeTab()" (changeTab)="changeView($event)" ></app-tabs>
+            </section>
+
+            <section class="data-view">
+                @if(activeTab()==='List'){
+                    <section class="mt-3 mx-1">
+                        <app-dashboard-card-2></app-dashboard-card-2>
+                        <app-dashboard-card-2></app-dashboard-card-2>
+                </section>
+                }@else {
+                    <section class="mx-1"> <app-bar-chart></app-bar-chart></section>
+                }
+            </section>
+    
+        </div>
+        <div class="col-xl-3">
+            <app-rader-chart></app-rader-chart>
+            <app-progress></app-progress>
+            <app-progress></app-progress>
+        </div>
+    </div>
+</main>
